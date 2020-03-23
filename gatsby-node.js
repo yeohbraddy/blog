@@ -5,3 +5,32 @@
  */
 
 // You can delete this file if you're not using it
+import { resolve } from "path";
+
+export function createPages({ boundActionCreators, graphql }) {
+    const { createPage } = boundActionCreators;
+    const postTemplate = resolve('src/templates/blogTemplates.js');
+
+    return graphql(`
+        {
+            allMarkdownRemark {
+                edges {
+                    node {
+                        frontmatter {
+                            path
+                        }
+                    }
+                }
+            }
+        }
+        `).then(res => {
+            if (res.errors) { return Promise.reject(res.errors)}
+
+            res.data.allMarkdownRemark.edges.forEach(({ node }) => {
+                createPage({
+                    path: node.frontmatter.path,
+                    component: postTemplate
+                })
+            })
+        })
+}

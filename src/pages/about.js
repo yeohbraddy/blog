@@ -1,11 +1,10 @@
 import React from "react";
 import Layout from "../components/Layout";
-import tachyons from "tachyons";
 
-const Home = () => (
+const About = () => (
     <Layout>
-        <h1>Home</h1>
+        <h1>About</h1>
     </Layout>
-)
+);
 
-export default Home;
+export default About;
