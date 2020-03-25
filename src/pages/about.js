@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
 import styled from "styled-components";
-import Me from "../images/me.jpg"
 
 const AboutContainer = styled.div.attrs({
     className: `dt mw6 center pv4 pv5-m pv6-ns avenir`
@@ -13,7 +12,8 @@ const ImgContainer = styled.div.attrs({
 
 const Img = styled.img.attrs({
     className: `mw5`,
-    src: "../images/me.jpg"
+    src: "../images/me.jpg",
+    alt: "Me"
 })``
 
 const AboutContentContainer = styled.div.attrs({
@@ -34,7 +34,7 @@ const About = () => (
     <Layout>
         <AboutContainer>
             <ImgContainer>
-                <Img src={Me}/>
+                <Img/>
             </ImgContainer>
             <AboutContentContainer>
                 <AboutContent>
