@@ -3,18 +3,17 @@ import styled from 'styled-components';
 import { Link } from "gatsby";
 
 const NavBar = styled.nav.attrs({
-    className: "mt3 pa3 pa4-ns avenir"
+    className: "mt3 ml4 pa3 pa4-ns avenir"
 })``
 
 const NavBtn = styled.a.attrs({
-    className: "link dim gray f3 dib mr4",
+    className: "link dim gray f3 dib mr5",
 })``
 
 const Nav = () => (
     <NavBar>
-        <Link activeStyle={{ borderBottom: "2px solid #878787" }} to="/"><NavBtn>Home</NavBtn></Link>
-        <Link activeStyle={{ borderBottom: "2px solid #878787" }} to="/about"><NavBtn>About</NavBtn></Link>
-        <Link activeStyle={{ borderBottom: "2px solid #878787" }} to="/blog"><NavBtn>Blogs</NavBtn></Link>
+        <Link to="/"><NavBtn>Blogs</NavBtn></Link>
+        <Link to="/about"><NavBtn>About</NavBtn></Link>
     </NavBar>
 )
 

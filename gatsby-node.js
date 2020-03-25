@@ -5,11 +5,11 @@
  */
 
 // You can delete this file if you're not using it
-import { resolve } from "path";
+const path = require("path");
 
-export function createPages({ boundActionCreators, graphql }) {
+exports.createPages = ({ boundActionCreators, graphql }) => {
     const { createPage } = boundActionCreators;
-    const postTemplate = resolve('src/templates/blogTemplates.js');
+    const postTemplate = path.resolve('src/templates/blogTemplates.js');
 
     return graphql(`
         {
