@@ -5,7 +5,7 @@ import styled from "styled-components";
 import Layout from "../components/Layout";
 
 const Container = styled.div.attrs({
-  className: "pa6 avenir"
+  className: "pa6-ns pa4 avenir"
 })``
 
 const Title = styled.h1.attrs({

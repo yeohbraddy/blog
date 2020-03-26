@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 
 const Card = styled.article.attrs({
-    className: "bg-white center mw6 ba b--black-10 mv4 avenir"
+    className: "bg-white center mw6-ns mw5 ba b--black-10 mv4 avenir"
 })``
 
 const CardTitleDiv = styled.div.attrs({
@@ -11,7 +11,7 @@ const CardTitleDiv = styled.div.attrs({
 })``
 
 const CardTitle = styled.h1.attrs({
-    className: "f4 ttu tracked"
+    className: "f3-ns f5 ttu tracked"
 })``
 
 const Img = styled.img.attrs({
@@ -24,7 +24,7 @@ const CardContentDiv = styled.div.attrs({
 })``
 
 const CardContentLink = styled.a.attrs({
-    className: "link dim black f4 lh-title",
+    className: "link dim black f4-ns f6 lh-title",
 })``
 
 const CardContentDetail = styled.small.attrs({
