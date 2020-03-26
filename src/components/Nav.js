@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link } from "gatsby";
 
 const NavBar = styled.nav.attrs({
-    className: "mt3 ml4 pa3 pa4-ns avenir tc"
+    className: "mt3 ml4 pa3 pa4-ns avenir"
 })``
 
 const NavBtn = styled.a.attrs({
