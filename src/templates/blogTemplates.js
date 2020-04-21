@@ -35,8 +35,6 @@ export default function Template({ data }) {
     )
 }
 
-//https://ultimatecourses.com/blog/building-a-blog-with-gatsby-and-graphql
-
 export const postQuery = graphql`
 query BlogPost($path:String! ) {
     markdownRemark(frontmatter: {path: {eq: $path }}) {
