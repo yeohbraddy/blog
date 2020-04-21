@@ -6,18 +6,21 @@ import Post from "../components/Post";
 const Blog = ({ data }) => (
     <Layout>
        {
-           data.allMarkdownRemark.edges.map(post => {
-               const { title, author, date, description, path } = post.node.frontmatter;
-
+           data.allMarkdownRemark.edges.map((post, i) => {
+               const { title, author, date, description, path, image } = post.node.frontmatter;
+               {console.log(image.childImageSharp.fluid.src)}
                return (
                    <Post
+                        key={i}
                         title={title}
                         author={author}
                         date={date}
                         description={description}
                         key={`${date}__${title}`}
                         path={path}
+                        image={image.childImageSharp.fluid}
                     />
+                    
                )
            })
        }
@@ -37,6 +40,13 @@ export const AllBlogsQuery = graphql`
                         description
                         author
                         path
+                        image {
+                            childImageSharp {
+                                fluid(maxWidth: 1200) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
                     }
                 }
             }

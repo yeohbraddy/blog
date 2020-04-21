@@ -4,6 +4,7 @@ date: '23-03-2020'
 title: 'My First Blog'
 author: 'Braddy Yeoh'
 description: 'This is my very first blog of 2020!'
+image: '../../images/sap.jpeg'
 ---
 
 Here is my main content.

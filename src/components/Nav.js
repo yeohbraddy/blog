@@ -6,7 +6,7 @@ const NavBar = styled.nav.attrs({
     className: "mt3 ml4 pa3 pa4-ns avenir"
 })``
 
-const NavBtn = styled.a.attrs({
+const NavBtn = styled.p.attrs({
     className: "link dim gray f3-ns dib mr5",
 })``
 
