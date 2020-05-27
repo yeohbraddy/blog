@@ -1,7 +1,7 @@
 ---
 path: '/sistem-2020'
 date: '27-05-2020'
-title: 'SISTEM 2020 - How I spent my semester breaks and what I'd do differently'
+title: "SISTEM 2020 - How I've spent my semester breaks and what I'd do differently"
 author: 'Braddy Yeoh'
 image: '../../images/SISTEM.png'
 description: 'A tech conference lightning talk where I reflected on how I spent my time and what I would do differently.'
