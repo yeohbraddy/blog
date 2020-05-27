@@ -4,7 +4,7 @@ date: '27-05-2020'
 title: "SISTEM 2020 - How I've spent my semester breaks and what I'd do differently"
 author: 'Braddy Yeoh'
 image: '../../images/SISTEM.png'
-description: 'A tech conference lightning talk where I reflected on how I spent my time and what I would do differently.'
+description: 'A tech conference lightning talk where I reflected on how I spent my time'
 ---
 
 Hi guys, my name is Braddy, I'm a third year UCDCS student and welcome to my talk. So today my talk is about what I did during my semester breaks and what I'd do differently. 
